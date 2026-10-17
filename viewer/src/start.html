@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>智云聚焦 · 1.9.6</title>
+<style>
+:root{color-scheme:dark;font:15px/1.7 "Microsoft YaHei","Segoe UI",sans-serif;color:#e7e7e7;background:#1f1f1f}
+*{box-sizing:border-box}body{margin:0;padding:64px 24px}main{max-width:680px;margin:auto}
+header{font-size:12px;color:#aaa}h1{font-size:32px;line-height:1.4;font-weight:500;margin:12px 0 20px}p{margin:12px 0;color:#bdbdbd}
+a{color:inherit;text-underline-offset:3px}.start{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:28px 0 40px}
+.bookmark,button{font:inherit;color:#eee;background:#383838;border:1px solid #555;border-radius:8px;padding:9px 16px;text-decoration:none;cursor:pointer}
+.bookmark:hover,button:hover{background:#454545}.launch{padding:8px 0;color:#bdbdbd}
+details{border-top:1px solid #383838;padding:16px 0}summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:'+';color:#aaa}details[open]>summary::after{content:'−'}summary::-webkit-details-marker{display:none}
+textarea{display:block;width:100%;height:100px;resize:vertical;margin:14px 0 0;padding:12px;background:#252525;color:#bbb;border:1px solid #454545;border-radius:6px;font:12px/1.5 monospace}
+:is(a,button,summary,textarea):focus-visible{outline:2px solid #ddd;outline-offset:4px}kbd{font:12px/1.5 system-ui;border:1px solid #505050;border-radius:4px;padding:2px 5px;color:#ddd}
+#copyStatus{font-size:13px;margin-left:12px;color:#bbb}footer{font-size:12px;color:#888;margin-top:32px}
+@media(max-width:500px){body{padding:32px 20px}h1{font-size:27px}}
+</style>
+<main>
+<header>1.9.6</header>
+<h1>智云聚焦</h1>
+<p>将下面的书签拖到书签栏，再在智云回放中点击使用。</p>
+<div class="start"><a class="bookmark" id="bookmark" href="__BOOKMARK__" draggable="true">智云聚焦 1.9.6</a><a class="launch" href="zhiyun-focus://start">启动助手</a></div>
+<details><summary>更新原有书签</summary>
+<p>在旧书签上点右键，修改“网址”为下面的地址。已有板位、截图和草稿保留。</p>
+<button id="copy" type="button">复制新版书签地址</button><span id="copyStatus" role="status"></span>
+<textarea aria-label="书签地址" id="bookmark-code" readonly>__BOOKMARK__</textarea>
+</details>
+<details><summary>看课与写字</summary>
+<p>鼠标在底部横条附近短暂停留后显示操作，停下后自动收起。点板位图标选择视角，新增板位时在全景中圈选。全屏在横条右端。</p>
+<p><kbd>F</kbd> 按住看全景，<kbd>1–6</kbd> 切板位，<kbd>R</kbd> 重圈，<kbd>空格</kbd> 播放或暂停，<kbd>←</kbd> <kbd>→</kbd> 跳转 5 秒。</p>
+<p>横条上的写字保护图标屏蔽当前课程的键盘和触屏误触，保留鼠标操作。鼠标移到右上角后可退出；触笔在该处按住后右滑，或长按 <kbd>Esc</kbd> 后松开，也能退出。鼠标右键长按是另一条解除途径。</p>
+<p>清晰人声在本机处理；未就绪或处理失败时保留原声。设置中可切回原声。基础看课不依赖声音服务。</p>
+</details>
+<details><summary>截图、提问与恢复</summary>
+<p>点“提问”打开 ChatGPT，视频继续播放。拖动侧栏左边缘调宽，双击恢复默认宽度。收起再打开保留当前讲次的输入；不同课程和讲次各自保存。</p>
+<p>点截图图标或按 <kbd>S</kbd> 框选板书，原图、时刻与当时的板位一起保存，并复制圈选图。画面旁的缩略图可以直接复制、移出或撤回；点气泡图标再带入提问。图片流里能找回原图和标记。最终消息由你发送。</p>
+<p>“清空全部”清除当前草稿的文字和全部课堂附图；清空后可立即撤销。图片上的叉只移除那张图，侧栏的叉只收起提问。已保存的原图不会因此被删除。</p>
+<p>横条上的资料图标打开学习记录，默认显示本讲；点课程名称可换课程和讲次。其他课程的材料只有主动选择才会带入。本讲草稿可继续，跨课草稿以副本带入，有真实 ChatGPT 地址的记录可打开原对话。</p>
+<p>学习记录中的“更多 → 导出备份”可保存原图、布局和问题。刷新课程页面可退出聚焦；本机助手可从系统托盘退出。</p>
+</details>
+<footer>使用原视频与原课程时钟。</footer>
+</main>
+<script>
+document.getElementById('bookmark').addEventListener('click',e=>{e.preventDefault();alert('请将书签拖到书签栏，再在智云回放页面点击。');});
+document.getElementById('copy').addEventListener('click',async()=>{const t=document.getElementById('bookmark-code');try{await navigator.clipboard.writeText(t.value);document.getElementById('copyStatus').textContent='已复制';}catch{t.focus();t.select();document.getElementById('copyStatus').textContent='已选中，按 Ctrl+C 复制';}});
+</script>
+</html>

@@ -1,0 +1,7 @@
+# Install torch==2.11.0 and torchaudio==2.11.0 from the official CUDA 12.8
+# index first; see README.md. These are the remaining direct runtime imports.
+numpy==2.4.6
+scipy==1.18.0
+einops==0.8.2
+rotary-embedding-torch==0.8.3
+torchinfo==1.8.0

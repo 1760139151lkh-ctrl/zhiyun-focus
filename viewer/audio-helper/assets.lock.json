@@ -1,0 +1,70 @@
+{
+  "schema": 1,
+  "source_repository": "https://github.com/modelscope/ClearerVoice-Studio",
+  "source_revision": "6b3774dc79c46ae8bed2a4fa5f706f0ac8c75c61",
+  "model_repository": "alibabasglab/MossFormer2_SE_48K",
+  "model_revision": "eff8c97925c8bec812af707814b3e5d777fd4503",
+  "license": "Apache-2.0",
+  "files": [
+    {
+      "path": "cv-runtime/LICENSE",
+      "url": "https://raw.githubusercontent.com/modelscope/ClearerVoice-Studio/6b3774dc79c46ae8bed2a4fa5f706f0ac8c75c61/LICENSE",
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "path": "cv-runtime/models/mossformer2_se/__init__.py",
+      "url": "https://raw.githubusercontent.com/modelscope/ClearerVoice-Studio/6b3774dc79c46ae8bed2a4fa5f706f0ac8c75c61/clearvoice/clearvoice/models/mossformer2_se/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "cv-runtime/models/mossformer2_se/conv_module.py",
+      "url": "https://raw.githubusercontent.com/modelscope/ClearerVoice-Studio/6b3774dc79c46ae8bed2a4fa5f706f0ac8c75c61/clearvoice/clearvoice/models/mossformer2_se/conv_module.py",
+      "bytes": 14016,
+      "sha256": "cd16d84a55ed22a234d91871d685a7ae97fa3fbca3f0d94bd065ce0b4c9a1180"
+    },
+    {
+      "path": "cv-runtime/models/mossformer2_se/fsmn.py",
+      "url": "https://raw.githubusercontent.com/modelscope/ClearerVoice-Studio/6b3774dc79c46ae8bed2a4fa5f706f0ac8c75c61/clearvoice/clearvoice/models/mossformer2_se/fsmn.py",
+      "bytes": 10621,
+      "sha256": "62c376b2708ac1c59853c13cbe9acb7ea011082c39f1a42e1af0f8213a00bb76"
+    },
+    {
+      "path": "cv-runtime/models/mossformer2_se/layer_norm.py",
+      "url": "https://raw.githubusercontent.com/modelscope/ClearerVoice-Studio/6b3774dc79c46ae8bed2a4fa5f706f0ac8c75c61/clearvoice/clearvoice/models/mossformer2_se/layer_norm.py",
+      "bytes": 4075,
+      "sha256": "d28fea41b3c5a2dd8bb7a1a8c1c97492fcc7eb88cc7b46283fc21e4dbf19f062"
+    },
+    {
+      "path": "cv-runtime/models/mossformer2_se/mossformer2.py",
+      "url": "https://raw.githubusercontent.com/modelscope/ClearerVoice-Studio/6b3774dc79c46ae8bed2a4fa5f706f0ac8c75c61/clearvoice/clearvoice/models/mossformer2_se/mossformer2.py",
+      "bytes": 19471,
+      "sha256": "528b7d6078c8ac99806a2baefe2dc707a2d9ddc6595abe95e4084b92b397b94b"
+    },
+    {
+      "path": "cv-runtime/models/mossformer2_se/mossformer2_block.py",
+      "url": "https://raw.githubusercontent.com/modelscope/ClearerVoice-Studio/6b3774dc79c46ae8bed2a4fa5f706f0ac8c75c61/clearvoice/clearvoice/models/mossformer2_se/mossformer2_block.py",
+      "bytes": 26778,
+      "sha256": "8b4f1714156365d9f1e5d96f750793f47d92f51c14d0afd00d43055cd78bdee7"
+    },
+    {
+      "path": "cv-runtime/models/mossformer2_se/mossformer2_se_wrapper.py",
+      "url": "https://raw.githubusercontent.com/modelscope/ClearerVoice-Studio/6b3774dc79c46ae8bed2a4fa5f706f0ac8c75c61/clearvoice/clearvoice/models/mossformer2_se/mossformer2_se_wrapper.py",
+      "bytes": 3479,
+      "sha256": "85e71167a9025a137f9ca8d314c3da4a34cd3285dc856d51352050ecc56e4dda"
+    },
+    {
+      "path": "models/MossFormer2_SE_48K/README.md",
+      "url": "https://huggingface.co/alibabasglab/MossFormer2_SE_48K/resolve/eff8c97925c8bec812af707814b3e5d777fd4503/README.md",
+      "bytes": 2176,
+      "sha256": "62c405e115b2f3f948730fc2574c9a0019da3c12a0efef32c7d3873b16ac460e"
+    },
+    {
+      "path": "models/MossFormer2_SE_48K/last_best_checkpoint.pt",
+      "url": "https://huggingface.co/alibabasglab/MossFormer2_SE_48K/resolve/eff8c97925c8bec812af707814b3e5d777fd4503/last_best_checkpoint.pt",
+      "bytes": 221552019,
+      "sha256": "03692b9f773bbd6bb43b9c5a41f96b1e28affd66e13796b7bec66ad3d8b227c6"
+    }
+  ]
+}
